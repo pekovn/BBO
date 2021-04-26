@@ -1,4 +1,5 @@
 import { newObj } from './data.js';
+let input1 = document.getElementById('input1');
 let input11 = document.getElementById('input11');
 let input12 = document.getElementById('input12');
 let input13 = document.getElementById('input13');
@@ -11,10 +12,17 @@ let input19 = document.getElementById('input19');
 let input20 = document.getElementById('input20');
 let input21 = document.querySelectorAll('.percent div input');
 let toResult = document.querySelector('.toResult');
+let userName = document.querySelector('.userName input');
+let user = document.querySelector('#user');
 const char = String.fromCharCode(171);
 const char2 = String.fromCharCode(187);
 
+user.addEventListener('click', ()=>{
+    input1.value= `!H!H Good morning, ladies and gentlemen !H ${userName.value} here - tell me as soon as possible in case of an issue :) !H!H`
 
+})
+
+// !H!H Good morning, ladies and gentlemen !H Pavel here - tell me as soon as possible in case of an issue :) !H!H userName
 // let nameN = newObj['007Rana'.toLowerCase()];
 // let nameS = newObj['0ldie90'.toLowerCase()];
 // let percentFirst = '10' + '%';
@@ -56,7 +64,6 @@ toResult.addEventListener('click', () => {
 
     let nameN = newObj[input15.value.toLowerCase()];
     let nameS = newObj[input16.value.toLowerCase()];
-    console.log(input21[0].value);
 
     let nameE = newObj[input17.value.toLowerCase()];
     let nameW = newObj[input18.value.toLowerCase()];
@@ -77,7 +84,6 @@ toResult.addEventListener('click', () => {
     let percent2 = `${input21[1].value}%`;;
     let nameThirdN = newObj[input19.value.toLowerCase()];
     let nameThirdS = newObj[input20.value.toLowerCase()];
-    console.log(newObj[input19.value.toLowerCase()]);
     if (nameThirdN == "Robots") {
         winners = `!C!H!H The WINNERS in section N/S are ${nameFirstN} and ${nameFirstS} with ${percent1} !H!H!C`;
         // Mitchell winners section E/W
@@ -85,7 +91,6 @@ toResult.addEventListener('click', () => {
     } else {
 
         let percent3 = `${input21[2].value}%`;;
-        console.log(`!C!H!H And the WINNERS are ${nameN} and ${nameS} with ${percent1}!C!H!H`);
 
         winners = `!C!H!HAnd the WINNERS are ${nameFirstN} and ${nameFirstS} with ${percent1}!C!H!H`;
         second = `!H!C!HSecond place goes to ${nameSecondN} and ${nameSecondS} with ${percent2}!H!C!H`;

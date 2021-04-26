@@ -14,7 +14,7 @@
             <div class="startTournaments">
                 <div>
                     <input type="text"
-                        value="!H!H Good morning, ladies and gentlemen !H Pavel here - tell me as soon as possible in case of an issue :) !H!H"
+                        value="!H!H Good morning, ladies and gentlemen !H ${userName.value} here - tell me as soon as possible in case of an issue :) !H!H"
                         id="input1">
 
                     <!-- The button used to copy the text -->
@@ -109,6 +109,7 @@
             </div>
             <div class="winnersStatus winnersPercent">
                 <div class="winners">
+                    <div><h2>Winners</h2></div>
                     <div class="input15">
                         <input type="text" value="" id="input15">
 
@@ -147,6 +148,7 @@
                     </div>
                 </div>
                 <div class="percent">
+                    <div><h2>Result %</h2></div>
                     <div class="input21">
                         <input type="text" value="" id="input21">
                         <span>:1st</span>
@@ -168,15 +170,11 @@
                     <div>
 
                     </div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                     <button class="toResult">toResult</button>
                 </div>
 
@@ -213,13 +211,20 @@
                     <button onclick="myFunction(input24)">Round</button>
                 </div>
                 <div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="userName">
+                <input type="text" placeholder="Put Your name here!">
+    
+                <!-- The button used to copy the text -->
+                <button id="user">User Name</button>
             </div>
         </div>
+       
     </div>
     <script>
         function myFunction(target) {

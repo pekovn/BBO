@@ -61,3 +61,10 @@ input, button {
 button:hover{
   background: chocolate;
 }
+
+
+@media (max-width: 1300px) {
+input {
+   font-size: 10px;
+  }
+}
