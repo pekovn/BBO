@@ -14,7 +14,7 @@
             <div class="startTournaments">
                 <div>
                     <input type="text"
-                        value="!H!H Good morning, ladies and gentlemen !H ${userName.value} here - tell me as soon as possible in case of an issue :) !H!H"
+                        value="!H!H Good morning, ladies and gentlemen !H Pavel here - tell me as soon as possible in case of an issue :) !H!H"
                         id="input1">
 
                     <!-- The button used to copy the text -->
@@ -109,7 +109,9 @@
             </div>
             <div class="winnersStatus winnersPercent">
                 <div class="winners">
-                    <div><h2>Winners</h2></div>
+                    <div>
+                        <h2>Winners</h2>
+                    </div>
                     <div class="input15">
                         <input type="text" value="" id="input15">
 
@@ -148,21 +150,23 @@
                     </div>
                 </div>
                 <div class="percent">
-                    <div><h2>Result %</h2></div>
+                    <div>
+                        <h2>Result %</h2>
+                    </div>
                     <div class="input21">
-                        <input type="text" value="" id="input21">
+                        <input type="text" value="" id="input21" class="res1">
                         <span>:1st</span>
 
                         <!-- The button used to copy the text -->
                     </div>
                     <div class="input21">
-                        <input type="text" value="" id="input21">
+                        <input type="text" value="" id="input21" class="res2">
                         <span>:2nd</span>
 
                         <!-- The button used to copy the text -->
                     </div>
                     <div class="input21">
-                        <input type="text" value="" id="input21">
+                        <input type="text" value="" id="input21" class="res3">
                         <span>:3th</span>
 
                         <!-- The button used to copy the text -->
@@ -185,6 +189,8 @@
 
                     <!-- The button used to copy the text -->
                     <button onclick="myFunction(input11)">Curr Result</button>
+                    <span>Round:</span>
+                    <input type="text" value="" id="currRound">
                 </div>
                 <div class="input12">
                     <input type="text" value="" id="input12">
@@ -219,18 +225,17 @@
             </div>
             <div class="userName">
                 <input type="text" placeholder="Put Your name here!">
-    
+
                 <!-- The button used to copy the text -->
                 <button id="user">User Name</button>
             </div>
         </div>
-       
+
     </div>
     <script>
         function myFunction(target) {
             /* Get the text field */
             var copyText = document.getElementById(target.id);
-            console.log(target.id);
 
             /* Select the text field */
             copyText.select();

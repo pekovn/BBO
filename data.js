@@ -1,4 +1,14 @@
-﻿
+﻿export let clubs = {
+    "Acol": "AcolBCTD",
+    "Queen of Hearts": "DartVader1",
+    "Caterham": "CaterhamTD",
+    "CBC": "CBC100TD",
+    "Guildford U3A": "Gu3ATD",
+    "Newland": "NewlandTD",
+    "Roeh": "RoehTD",
+    "SBBC": "SBBC TD",
+    "Manchester": "MBCTD"
+}
 const arr = [
     {
         "BBO":"Robots",
