@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  height: 100vh;
+  padding: 20px;
+  background: #0598c9;;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "startTournaments utils winnersStatus winnersStatus"
+    "resultAndCurrRound resultAndCurrRound resultAndCurrRound resultAndCurrRound"
+    ". . . .";
+    grid-gap: 10px;
+}
+
+.startTournaments { grid-area: startTournaments; }
+
+.utils { grid-area: utils; }
+
+.winnersStatus { grid-area: winnersStatus; }
+
+.resultAndCurrRound { grid-area: resultAndCurrRound; }
+
+
+.winnersPercent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "winners percent"
+    }
+
+.winners { grid-area: winners; }
+
+.percent { grid-area: percent; }
+
+.startTournaments, .utils, .winners, .percent, .resultAndCurrRound{
+  display: grid;
+  grid-gap: 5px 0;
+}
+
+input {
+  min-width: 60%;
+}
+button {
+  min-width: 28%;
+}
+
+input, button {
+  height: 25px;
+}
+
+button:hover{
+  background: chocolate;
+}
