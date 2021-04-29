@@ -60,15 +60,15 @@ toResult.addEventListener('click', () => {
     let round;
     if (counterRounds == 'last') {
         roundClocked.value = `!H${counterRounds} ${char}round${char2}  has started !H`;
-        currentResult = `!HLast ${char}round${char2} has started:${nameN} and ${nameS} on the top, followed by ${nameE} and ${nameW}!H!H`;
+        currentResult = `!HLast ${char}round${char2} has started: ${nameN} and ${nameS} on the top, followed by ${nameE} and ${nameW}!H!H`;
 
     } else if (counterRounds == '') {
-        currentResult = `!HRound ${char}2${char2} has started:${nameN} and ${nameS} on the top, followed by ${nameE} and ${nameW}!H!H`;
+        currentResult = `!HRound ${char}2${char2} has started: ${nameN} and ${nameS} on the top, followed by ${nameE} and ${nameW}!H!H`;
 
         roundClocked.value = `!H Round 2 has started !H`;
     } else {
         roundClocked.value = `!H Round ${counterRounds} has started !H`;
-        currentResult = `!HRound ${char}${counterRounds}${char2} has started:${nameN} and ${nameS} on the top, followed by ${nameE} and ${nameW}!H!H`;
+        currentResult = `!HRound ${char}${counterRounds}${char2} has started: ${nameN} and ${nameS} on the top, followed by ${nameE} and ${nameW}!H!H`;
     }
     // round = `!H!HLast ${char}round${char2} has started:` 
 
