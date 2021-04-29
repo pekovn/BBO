@@ -1,4 +1,5 @@
-﻿export let clubs = {
+﻿
+export let clubs = {
     "Acol": "AcolBCTD",
     "Queen of Hearts": "DartVader1",
     "Caterham": "CaterhamTD",
@@ -8,6 +9,7 @@
     "Roeh": "RoehTD",
     "SBBC": "SBBC TD",
     "Manchester": "MBCTD"
+  
 }
 const arr = [
     {

@@ -103,7 +103,7 @@ toResult.addEventListener('click', () => {
         input13.value = '';
         input14.value = '';
 
-    }, 1000000);
+    }, 100000);
 })
 
 
