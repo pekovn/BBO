@@ -16,6 +16,7 @@ let input17 = document.getElementById('input17');
 let input18 = document.getElementById('input18');
 let input19 = document.getElementById('input19');
 let input20 = document.getElementById('input20');
+let link = document.getElementById('input022');
 let roundClocked = document.getElementById('input24');
 let currRound = document.getElementById('currRound');
 let input21 = document.querySelectorAll('.percent div input');
@@ -24,6 +25,7 @@ let userName = document.querySelector('.userName input');
 let user = document.querySelector('#user');
 const char = String.fromCharCode(171);
 const char2 = String.fromCharCode(187);
+
 
 user.addEventListener('click', () => {
     if (userName.value == '') {
@@ -36,7 +38,10 @@ user.addEventListener('click', () => {
 
 //!H Round 3 has started !H
 toResult.addEventListener('click', () => {
+    if(link.value!=''){
 
+        link.value= `!H Full result: ${link.value} !H`
+    }
     let nameN = newObj[input15.value.toLowerCase()];
     let nameS = newObj[input16.value.toLowerCase()];
 
@@ -59,7 +64,7 @@ toResult.addEventListener('click', () => {
     // let round = `!H!HRound ${char}${counterRounds}${char2} has started:`;
     let round;
     if (counterRounds == 'last') {
-        roundClocked.value = `!H${counterRounds} ${char}round${char2}  has started !H`;
+        roundClocked.value = `!HLast ${char}round${char2}  has started !H`;
         currentResult = `!HLast ${char}round${char2} has started: ${nameN} and ${nameS} on the top, followed by ${nameE} and ${nameW}!H!H`;
 
     } else if (counterRounds == '') {
