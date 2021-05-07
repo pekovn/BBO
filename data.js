@@ -13,6 +13,10 @@ export let clubs = {
 }
 const arr = [
     {
+    "BBO":"godfrey tj",
+    "Name":"Godfrey Jackson"
+    },
+    {
         "BBO":"Robots",
         "Name": "Robots",
     },
