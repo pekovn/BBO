@@ -1,5 +1,5 @@
 import { newObj, clubs } from './data.js';
-console.log(clubs);
+
 let res1 = document.querySelector('.res1');
 let res2 = document.querySelector('.res2');
 let res3 = document.querySelector('.res3');
