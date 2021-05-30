@@ -4988,7 +4988,7 @@ const arr = [
     },
     {
         "BBO": "Bisclink",
-        "Name": "Raj",
+        "Name": "Raj Khanchandani",
         "Club": "ACOL"
     },
     {
@@ -38306,7 +38306,7 @@ const arr = [
     },
     {
         "BBO": "westrose",
-        "Name": "Shirley",
+        "Name": "Shirley Hinton",
         "Club": "ACOL/SBBC"
     },
     {
