@@ -22268,7 +22268,7 @@ const arr = [
     },
     {
         "BBO": "Lucille20",
-        "Name": "Lucille20",
+        "Name": "Sandra Granditer",
         "Club": "ACOL/SBBC/QofH"
     },
     {
